@@ -1,0 +1,34 @@
+{
+  "name": "keystoneformsample",
+  "version": "1.0.0",
+  "description": "form sample for keystone lib",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:app && npm run build:lib",
+    "build:app": "tsc && vite build --config vite.config.app.js",
+    "build:lib": "tsc && vite build --config vite.config.lib.js",
+    "prepare": "npm run build:lib"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "@minecraft/server": "^2.4.0",
+    "@minecraft/server-ui": "^2.0.0",
+    "eslint": "^9.38.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.2",
+    "vite": "^7.1.7",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "dependencies": {
+    "keystonemc": "^4.0.0"
+  }
+}
