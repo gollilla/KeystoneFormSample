@@ -5,3 +5,5 @@ export {
   ItemList,
   ItemDetail,
 };
+
+export * from './router';
