@@ -22,7 +22,7 @@ export default defineConfig({
     },
     rollupOptions: {
       external: [
-        'keystonemc',
+        /^keystonemc(\/.*)?$/,
         '@minecraft/server',
         '@minecraft/server-net',
         '@minecraft/server-ui',
