@@ -29,6 +29,6 @@
     "vite-plugin-dts": "^4.5.4"
   },
   "dependencies": {
-    "keystonemc": "github:XxPMMPERxX/KeystoneCore#fix/vite-plugin"
+    "keystonemc": "^4.0.1"
   }
 }
